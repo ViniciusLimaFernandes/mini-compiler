@@ -1,4 +1,4 @@
-#Lexical analyzer 🈶
+# Lexical analyzer 🈶
 A lexical analyzer using ANTLR and Gradle as build tool. :)
 
 ### 🔧 Pre requisites
