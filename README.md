@@ -10,6 +10,7 @@ Clone the project and at the root folder choose which command you want to run:
 
 * #### Run application Task
   ![runnner](https://user-images.githubusercontent.com/36551957/111943075-6dbfd680-8ab3-11eb-848e-fa545549a6f2.gif)
+    
     To start the application execute the following command: ```gradle run```
 
 * #### Generate Antlr Files
