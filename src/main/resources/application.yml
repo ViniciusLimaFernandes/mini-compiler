@@ -1,0 +1,2 @@
+antlr4:
+  output: "src/main/java/tcc/lexer/analyzer"

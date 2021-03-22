@@ -1,0 +1,84 @@
+2021-03-21 22:14:50 INFO  LexerRunner:20 - Starting Lexer
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: PROGRAM Lexeme: Program CalculaMedia
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: Var valor1,
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme:  valor2,
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme:  valor3,
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme:  media
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: Char sair
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: Begin
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: media
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: OPERATORS Lexeme: :=
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme:  0
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: totalValores
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: OPERATORS Lexeme: :=
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme:  3
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: sair
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: OPERATORS Lexeme: :=
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: TEXT Lexeme: "n"
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: REPETITIONS Lexeme: while
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: (
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: sair
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: COMPARATORS Lexeme: <>
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: TEXT Lexeme: "s"
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: )
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme:  do
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: begin
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: CONSOLE Lexeme: writeln
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: (
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: TEXT Lexeme: "Digite o primeiro valor"
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: )
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: CONSOLE Lexeme: readln
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: (
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: valor1
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: )
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: CONSOLE Lexeme: writeln
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: (
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: TEXT Lexeme: "Digite o segundo valor"
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: )
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: CONSOLE Lexeme: readln
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: (
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: valor2
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: )
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: CONSOLE Lexeme: writeln
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: (
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: TEXT Lexeme: "Digite o terceiro valor"
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: )
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: CONSOLE Lexeme: readln
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: (
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: valor3
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: )
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: media
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: OPERATORS Lexeme: :=
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: (
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: valor1
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: OPERATORS Lexeme: +
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: valor2
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: OPERATORS Lexeme: +
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme: valor3
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: )
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: OPERATORS Lexeme: /
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: NUMBERS Lexeme: 3
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: EXECUTIONS Lexeme: end
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: CONSOLE Lexeme: writeln
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: (
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: TEXT Lexeme: "A media e "
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: ',' Lexeme: ,
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: VARIABLES Lexeme:  media
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: SPECCHARS Lexeme: )
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: ;
+2021-03-21 22:14:50 INFO  LexerRunner:27 - Token found: BLOCKDEFINITION Lexeme: End.
+2021-03-21 22:14:50 INFO  LexerRunner:30 - Program compiled successful!
