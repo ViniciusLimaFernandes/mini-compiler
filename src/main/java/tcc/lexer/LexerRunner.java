@@ -24,7 +24,10 @@ public class LexerRunner {
             minipascalLexer = new minipascal(CharStreams.fromFileName(INPUT_FILE_PATH));
 
             while (minipascalLexer.nextToken().getType() != Token.EOF){
-                log.info("Token found: "+ minipascalLexer.VOCABULARY.getDisplayName(minipascalLexer.getType())+" Lexeme: " + minipascalLexer.getText());
+                String token = minipascal.VOCABULARY.getDisplayName(minipascalLexer.getType());
+                String lexeme = minipascalLexer.getText();
+
+                log.info("Token found: "+ token +" Lexeme: " + lexeme);
             }
 
             log.info("Program compiled successful!");
