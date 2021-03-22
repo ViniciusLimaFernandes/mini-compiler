@@ -27,7 +27,7 @@ public class LexerRunner {
                 String token = minipascal.VOCABULARY.getDisplayName(minipascalLexer.getType());
                 String lexeme = minipascalLexer.getText();
 
-                log.info("Token found: "+ token +" Lexeme: " + lexeme);
+                log.info("Token found: "+ token +" | Lexeme: " + lexeme);
             }
 
             log.info("Program compiled successful!");

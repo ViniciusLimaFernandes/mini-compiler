@@ -7,6 +7,8 @@
     <list default="true" id="409af729-0130-40e5-bb0b-22a795ba76a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4j-application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4j-application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/LexerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/LexerRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
