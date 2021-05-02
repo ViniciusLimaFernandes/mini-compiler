@@ -1,35 +1,88 @@
-lexer grammar minipascal;
+grammar minipascal;
 @header {
     //This header adds the lexer exactly to the package that de application are looking for
     package tcc.lexer.analyzer;
 }
 
-PROGRAM: 'Program'(' '[a-zA-Z0-9]+[,]?);
+program: PROGRAM ID SEMICOLON
+            sentence*?
+         BEGIN
+            (loops | console_actions | sentence)*?
+         END;
+
+console_actions: CONSOLE BRACKET_OPEN
+                (string_declaration|ID(OPERATORS)?)*
+                (COMMA ID)*?
+                BRACKET_CLOSE
+                SEMICOLON;
+
+loops: while;
+
+while: WHILE BRACKET_OPEN ID COMPARATORS (string_declaration|ID) BRACKET_CLOSE DO
+              BEGIN_EXECUTION
+               (loops | console_actions | sentence)+?
+              END_EXECUTION SEMICOLON;
+
+sentence: variable_declaration | variable_assign | variable_inference | variable_inference_with_oprations;
+
+variable_assign: TYPES ID EQUALS (CONTENT | NUMBERS) SEMICOLON;
+
+variable_inference: ID ASSIGN (string_declaration | NUMBERS) SEMICOLON;
+
+variable_inference_with_oprations: ID ASSIGN BRACKET_OPEN variables_operations* BRACKET_CLOSE OPERATORS? (NUMBERS|ID)? SEMICOLON;
+
+variables_operations: ID OPERATORS (ID|NUMBERS)?;
+
+variable_declaration: TYPES (ID COMMA?)* SEMICOLON;
+
+string_declaration: STRING_CONTENT;
+
+PROGRAM: 'Program';
+
+BEGIN: 'Begin';
+
+END: 'End.';
+
+BEGIN_EXECUTION : 'begin';
+
+END_EXECUTION: 'end';
+
+DO: 'do';
+
+CONSOLE: 'readln' | 'writeln';
+
+WHILE: 'while';
+
+FOR: 'for';
 
 TYPES : 'Int'| 'String' | 'Char' | 'Long' | 'Boolean' | 'Var';
 
-OPERATORS : ':=' | '-' | '+' | '*' | '/';
+OPERATORS : '-' | '+' | '*' | '/';
 
 COMPARATORS : '<>' | '==' | '<=' | '>=' | '!=';
 
 NUMBERS  : [+|-]?[0-9]+;
 
-TEXT : '"'((' ')?[a-zA-Z]+(' ')?)+'"';
+QUOTES: '"';
+
+ID: [0-9A-Za-z]+;
+
+STRING_CONTENT: QUOTES .*? QUOTES;
+
+CONTENT : (('"')?[0-9A-Za-z]('"')?)+;
 
 COMMENTS : '\\' | '/*' | '*/';
 
-CONSOLE: 'readln' | 'writeln';
+COMMA: ',';
 
-REPETITIONS: 'for' | 'while';
+EQUALS: '=';
 
-EXECUTIONS : 'do' | 'end';
+ASSIGN: ':=';
 
-SEPARATORS: ',';
+SEMICOLON: ';';
 
-BLOCKDEFINITION: 'Begin' | 'End.' | ';';
+BRACKET_OPEN : '(';
 
-SPECCHARS : '(' | ')';
+BRACKET_CLOSE:  ')';
 
-VARIABLES : TYPES? (' ')? ([a-zA-Z0-9]+[,]?);
-
-SPECIAL  : [ \t\r\n]+ -> skip;
+SPECIAL  : [\t\r\n ]+ -> skip;

@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409af729-0130-40e5-bb0b-22a795ba76a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f572c0622c6a0fac52762e1169b00eb25b3fee15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4j-application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4j-application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr/minipascal.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr/minipascal.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/LexerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/CompilerRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.tokens" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +48,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="tcc-lexer" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="tcc-lexer" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -65,7 +68,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/tcc/lexer/inputs/code.mp" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -81,8 +84,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.tcc-lexer [run]">
-    <configuration name="LexerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tcc.lexer.LexerRunner" />
+    <configuration name="CompilerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcc.lexer.CompilerRunner" />
       <module name="tcc-lexer.main" />
       <extension name="coverage">
         <pattern>
@@ -93,6 +96,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="mini-compiler [generateTestGrammarSource]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateTestGrammarSource" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="tcc-lexer [antlrbuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -106,27 +130,6 @@
         <option name="taskNames">
           <list>
             <option value="antlrbuild" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="tcc-lexer [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,10 +184,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.tcc-lexer [run]" />
-        <item itemvalue="Gradle.tcc-lexer [antlrbuild]" />
-        <item itemvalue="Application.LexerRunner" />
+        <item itemvalue="Gradle.mini-compiler [generateTestGrammarSource]" />
         <item itemvalue="Gradle.tcc-lexer [generateGrammarSource]" />
-        <item itemvalue="Gradle.tcc-lexer [build]" />
+        <item itemvalue="Gradle.tcc-lexer [antlrbuild]" />
+        <item itemvalue="Application.CompilerRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -212,5 +215,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

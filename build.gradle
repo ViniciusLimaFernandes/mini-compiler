@@ -44,5 +44,5 @@ generateGrammarSource {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'tcc.lexer.LexerRunner'
+    mainClassName = 'tcc.lexer.CompilerRunner'
 }

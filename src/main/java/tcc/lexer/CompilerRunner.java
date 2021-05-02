@@ -9,9 +9,9 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import tcc.lexer.analyzer.*;
 
-public class LexerRunner {
+public class CompilerRunner {
 
-    private static final Logger log = LogManager.getLogger(LexerRunner.class);
+    private static final Logger log = LogManager.getLogger(CompilerRunner.class);
 
     private static final String INPUT_FILE_PATH = "src/main/java/tcc/lexer/inputs/code.mp";
 
@@ -19,12 +19,12 @@ public class LexerRunner {
         try {
             log.info("Starting Lexer");
 
-            minipascal minipascalLexer;
+            minipascalLexer minipascalLexer;
 
-            minipascalLexer = new minipascal(CharStreams.fromFileName(INPUT_FILE_PATH));
+            minipascalLexer = new minipascalLexer(CharStreams.fromFileName(INPUT_FILE_PATH));
 
             while (minipascalLexer.nextToken().getType() != Token.EOF){
-                String token = minipascal.VOCABULARY.getDisplayName(minipascalLexer.getType());
+                String token = minipascalLexer.VOCABULARY.getDisplayName(minipascalLexer.getType());
                 String lexeme = minipascalLexer.getText();
 
                 log.info("Token found: "+ token +" | Lexeme: " + lexeme);
