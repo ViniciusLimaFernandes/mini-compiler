@@ -1,5 +1,5 @@
-# Lexical analyzer 🈶
-A lexical analyzer using ANTLR and Gradle as build tool. :)
+# Lexical, syntactic and semantic analyzer 🈶
+An analyzer using ANTLR and Gradle as build tool. :)
 
 ### 🔧 Pre requisites
 * Gradle
