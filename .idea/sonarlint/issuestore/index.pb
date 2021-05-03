@@ -15,3 +15,5 @@ f
 6src/main/java/tcc/lexer/analyzer/minipascalParser.java,2\3\2370c3fbcb27c6cbfea0fb1331d77ba738123a36
 [
 +src/main/java/tcc/lexer/CompilerRunner.java,d\5\d53830fb44b1399b9d99249a9ff7486bc021d7ca
+a
+1src/main/java/tcc/lexer/service/MiniCompiler.java,7\2\7297fd3eabfb9a23539b4061be3bec213d0c23c8

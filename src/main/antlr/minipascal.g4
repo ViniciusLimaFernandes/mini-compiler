@@ -7,7 +7,7 @@ grammar minipascal;
 program: PROGRAM ID SEMICOLON
             sentence*?
          BEGIN
-            (loops | console_actions | sentence)*?
+            (loops | console_actions | sentence | conditions)*?
          END;
 
 console_actions: CONSOLE BRACKET_OPEN
@@ -18,8 +18,14 @@ console_actions: CONSOLE BRACKET_OPEN
 
 loops: WHILE BRACKET_OPEN ID COMPARATORS (string_declaration|ID) BRACKET_CLOSE DO
               BEGIN_EXECUTION
-               (loops | console_actions | sentence)+?
+               (loops | console_actions | sentence | conditions)+?
               END_EXECUTION SEMICOLON;
+
+conditions: IF (ID | CONTENT) COMPARATORS (ID | NUMBERS) THEN
+            (loops | console_actions | sentence | conditions)*
+            ELSE?
+            (loops | console_actions | sentence | conditions)*
+            END_EXECUTION;
 
 sentence: variable_declaration | variable_assign | variable_inference | variable_inference_with_oprations;
 
@@ -53,11 +59,17 @@ WHILE: 'while';
 
 FOR: 'for';
 
+IF: 'if';
+
+ELSE: 'else';
+
+THEN: 'then';
+
 TYPES : 'Int'| 'String' | 'Char' | 'Long' | 'Boolean' | 'Var';
 
 OPERATORS : '-' | '+' | '*' | '/';
 
-COMPARATORS : '<>' | '==' | '<=' | '>=' | '!=';
+COMPARATORS : '<>' | '==' | '<=' | '>=' | '!=' | '>' | '<';
 
 NUMBERS  : [+|-]?[0-9]+;
 

@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409af729-0130-40e5-bb0b-22a795ba76a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log4j-application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4j-application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr/minipascal.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr/minipascal.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/CompilerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/CompilerRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/inputs/code.mp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/inputs/code.mp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalParser.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
       <recent name="C:\Users\vinil\Documents\workspace\tcc-lexer\src\main\java\tcc\lexer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.tcc-lexer [run]">
+  <component name="RunManager" selected="Gradle.tcc-lexer [generateGrammarSource]">
     <configuration name="CompilerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tcc.lexer.CompilerRunner" />
       <module name="tcc-lexer.main" />
@@ -196,8 +195,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.tcc-lexer [run]" />
         <item itemvalue="Gradle.tcc-lexer [generateGrammarSource]" />
+        <item itemvalue="Gradle.tcc-lexer [run]" />
         <item itemvalue="Gradle.mini-compiler [generateTestGrammarSource]" />
         <item itemvalue="Gradle.tcc-lexer [antlrbuild]" />
         <item itemvalue="Application.CompilerRunner" />
