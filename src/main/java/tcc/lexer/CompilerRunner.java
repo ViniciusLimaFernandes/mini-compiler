@@ -3,11 +3,10 @@
  */
 package tcc.lexer;
 
-import org.antlr.v4.runtime.CharStreams;
-import org.antlr.v4.runtime.Token;
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import tcc.lexer.analyzer.*;
+import tcc.lexer.service.MiniCompiler;
 
 public class CompilerRunner {
 
@@ -19,16 +18,9 @@ public class CompilerRunner {
         try {
             log.info("Starting Lexer");
 
-            minipascalLexer minipascalLexer;
+            MiniCompiler.lexicalAnalysis(INPUT_FILE_PATH);
 
-            minipascalLexer = new minipascalLexer(CharStreams.fromFileName(INPUT_FILE_PATH));
-
-            while (minipascalLexer.nextToken().getType() != Token.EOF){
-                String token = minipascalLexer.VOCABULARY.getDisplayName(minipascalLexer.getType());
-                String lexeme = minipascalLexer.getText();
-
-                log.info("Token found: "+ token +" | Lexeme: " + lexeme);
-            }
+            MiniCompiler.syntaxAnalysis(INPUT_FILE_PATH);
 
             log.info("Program compiled successful!");
 

@@ -1,4 +1,4 @@
-// Generated from minipascal.g4 by ANTLR 4.7.2
+// Generated from c:\Users\vinil\Documents\workspace\mini-compiler\src\main\antlr\minipascal.g4 by ANTLR 4.8
 
     //This header adds the lexer exactly to the package that de application are looking for
     package tcc.lexer.analyzer;
@@ -14,7 +14,7 @@ import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class minipascalLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.7.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =

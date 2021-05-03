@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409af729-0130-40e5-bb0b-22a795ba76a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f572c0622c6a0fac52762e1169b00eb25b3fee15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log4j-application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4j-application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr/minipascal.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/antlr/minipascal.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/LexerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/CompilerRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/CompilerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/CompilerRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascal.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/analyzer/minipascalParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcc/lexer/inputs/code.mp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcc/lexer/inputs/code.mp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +60,20 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1q2xsk4hzZtNUvkoMjwor2MOfGD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -184,8 +197,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.tcc-lexer [run]" />
-        <item itemvalue="Gradle.mini-compiler [generateTestGrammarSource]" />
         <item itemvalue="Gradle.tcc-lexer [generateGrammarSource]" />
+        <item itemvalue="Gradle.mini-compiler [generateTestGrammarSource]" />
         <item itemvalue="Gradle.tcc-lexer [antlrbuild]" />
         <item itemvalue="Application.CompilerRunner" />
       </list>

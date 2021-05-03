@@ -1,4 +1,4 @@
-// Generated from minipascal.g4 by ANTLR 4.7.2
+// Generated from c:\Users\vinil\Documents\workspace\mini-compiler\src\main\antlr\minipascal.g4 by ANTLR 4.8
 
     //This header adds the lexer exactly to the package that de application are looking for
     package tcc.lexer.analyzer;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class minipascalParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.7.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -132,14 +132,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterProgram(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitProgram(this);
-		}
 	}
 
 	public final ProgramContext program() throws RecognitionException {
@@ -252,14 +244,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_console_actions; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterConsole_actions(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitConsole_actions(this);
-		}
 	}
 
 	public final Console_actionsContext console_actions() throws RecognitionException {
@@ -385,14 +369,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_loops; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterLoops(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitLoops(this);
-		}
 	}
 
 	public final LoopsContext loops() throws RecognitionException {
@@ -509,14 +485,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sentence; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterSentence(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitSentence(this);
-		}
 	}
 
 	public final SentenceContext sentence() throws RecognitionException {
@@ -578,14 +546,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variable_assign; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterVariable_assign(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitVariable_assign(this);
-		}
 	}
 
 	public final Variable_assignContext variable_assign() throws RecognitionException {
@@ -638,14 +598,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variable_inference; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterVariable_inference(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitVariable_inference(this);
-		}
 	}
 
 	public final Variable_inferenceContext variable_inference() throws RecognitionException {
@@ -712,14 +664,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variable_inference_with_oprations; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterVariable_inference_with_oprations(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitVariable_inference_with_oprations(this);
-		}
 	}
 
 	public final Variable_inference_with_oprationsContext variable_inference_with_oprations() throws RecognitionException {
@@ -805,14 +749,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variables_operations; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterVariables_operations(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitVariables_operations(this);
-		}
 	}
 
 	public final Variables_operationsContext variables_operations() throws RecognitionException {
@@ -872,14 +808,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variable_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterVariable_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitVariable_declaration(this);
-		}
 	}
 
 	public final Variable_declarationContext variable_declaration() throws RecognitionException {
@@ -936,14 +864,6 @@ public class minipascalParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_string_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).enterString_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof minipascalListener ) ((minipascalListener)listener).exitString_declaration(this);
-		}
 	}
 
 	public final String_declarationContext string_declaration() throws RecognitionException {

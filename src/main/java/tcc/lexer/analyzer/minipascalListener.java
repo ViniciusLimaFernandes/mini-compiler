@@ -71,6 +71,26 @@ public interface minipascalListener extends ParseTreeListener {
 	 */
 	void exitVariable_inference(minipascalParser.Variable_inferenceContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link minipascalParser#variable_inference_with_oprations}.
+	 * @param ctx the parse tree
+	 */
+	void enterVariable_inference_with_oprations(minipascalParser.Variable_inference_with_oprationsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link minipascalParser#variable_inference_with_oprations}.
+	 * @param ctx the parse tree
+	 */
+	void exitVariable_inference_with_oprations(minipascalParser.Variable_inference_with_oprationsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link minipascalParser#variables_operations}.
+	 * @param ctx the parse tree
+	 */
+	void enterVariables_operations(minipascalParser.Variables_operationsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link minipascalParser#variables_operations}.
+	 * @param ctx the parse tree
+	 */
+	void exitVariables_operations(minipascalParser.Variables_operationsContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link minipascalParser#variable_declaration}.
 	 * @param ctx the parse tree
 	 */

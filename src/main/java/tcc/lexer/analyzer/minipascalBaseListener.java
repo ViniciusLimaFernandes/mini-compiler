@@ -91,6 +91,30 @@ public class minipascalBaseListener implements minipascalListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterVariable_inference_with_oprations(minipascalParser.Variable_inference_with_oprationsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitVariable_inference_with_oprations(minipascalParser.Variable_inference_with_oprationsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterVariables_operations(minipascalParser.Variables_operationsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitVariables_operations(minipascalParser.Variables_operationsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterVariable_declaration(minipascalParser.Variable_declarationContext ctx) { }
 	/**
 	 * {@inheritDoc}

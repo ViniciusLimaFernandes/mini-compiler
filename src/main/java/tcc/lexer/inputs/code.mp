@@ -1,7 +1,6 @@
 Program CalculaMedia;
 
 Var valor1, valor2, valor3, media;
-
 Char sair;
 
 Begin
@@ -28,3 +27,8 @@ end;
 writeln ("A media e ", media);
 
 End.
+
+
+
+
+

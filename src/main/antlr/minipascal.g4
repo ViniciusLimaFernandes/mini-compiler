@@ -16,9 +16,7 @@ console_actions: CONSOLE BRACKET_OPEN
                 BRACKET_CLOSE
                 SEMICOLON;
 
-loops: while;
-
-while: WHILE BRACKET_OPEN ID COMPARATORS (string_declaration|ID) BRACKET_CLOSE DO
+loops: WHILE BRACKET_OPEN ID COMPARATORS (string_declaration|ID) BRACKET_CLOSE DO
               BEGIN_EXECUTION
                (loops | console_actions | sentence)+?
               END_EXECUTION SEMICOLON;
