@@ -6,6 +6,7 @@ package tcc.lexer;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import tcc.lexer.exceptions.MinipascalSemanticException;
 import tcc.lexer.service.MiniCompiler;
 
 public class CompilerRunner {
@@ -24,7 +25,9 @@ public class CompilerRunner {
 
             log.info("Program compiled successful!");
 
-        } catch (Exception e){
+        } catch (MinipascalSemanticException ex) {
+            log.error("Semantic error found: " + ex.getMessage());
+        } catch (Exception e) {
             log.error("Something went wrong: " + e.getMessage());
         }
     }

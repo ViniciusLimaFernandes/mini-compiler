@@ -7,13 +7,5 @@ T
 $src/test/java/tcc/lexer/AppTest.java,2\e\2eb2cfd2ecd6c53656cdf8b92e38bd0eff9be1b0
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-V
-&src/main/java/tcc/lexer/inputs/code.mp,9\f\9f6c00d0aedaf3343e7cedbf19efbdd57dfe1997
-L
-src/main/antlr/minipascal.g4,6\e\6ea32bc8d91a3d4469dbcbfbed37e274d0ff31bb
-f
-6src/main/java/tcc/lexer/analyzer/minipascalParser.java,2\3\2370c3fbcb27c6cbfea0fb1331d77ba738123a36
-[
-+src/main/java/tcc/lexer/CompilerRunner.java,d\5\d53830fb44b1399b9d99249a9ff7486bc021d7ca
 a
 1src/main/java/tcc/lexer/service/MiniCompiler.java,7\2\7297fd3eabfb9a23539b4061be3bec213d0c23c8

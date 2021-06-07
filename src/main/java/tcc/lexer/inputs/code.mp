@@ -2,6 +2,7 @@ Program CalculaMedia;
 
 Var valor1, valor2, valor3, media;
 Char sair;
+Int totalValores;
 
 Begin
 media := 0;

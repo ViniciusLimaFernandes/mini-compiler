@@ -2,6 +2,19 @@ grammar minipascal;
 @header {
     //This header adds the lexer exactly to the package that de application are looking for
     package tcc.lexer.analyzer;
+    import tcc.lexer.data.MinipascalSymbol;
+    import tcc.lexer.data.MinipascalSymbolTable;
+    import tcc.lexer.data.MinipascalVariable;
+    import tcc.lexer.exceptions.MinipascalSemanticException;
+    import java.util.ArrayList;
+}
+
+@members{
+    private int type;
+    private String varName;
+    private String varValue;
+    private MinipascalSymbolTable symbolTable = new MinipascalSymbolTable();
+    private MinipascalSymbol symbol;
 }
 
 program: PROGRAM ID SEMICOLON
@@ -11,33 +24,133 @@ program: PROGRAM ID SEMICOLON
          END;
 
 console_actions: CONSOLE BRACKET_OPEN
-                (string_declaration|ID(OPERATORS)?)*
-                (COMMA ID)*?
+                (string_declaration|ID {
+                          varName = _input.LT(-1).getText();
+                          varValue = null;
+                          symbol = new MinipascalVariable(varName,type, varValue);
+                          if (!symbolTable.exists(varName)) {
+                               throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                          }
+                }
+                (OPERATORS)?)*
+                (COMMA ID {
+                            varName = _input.LT(-1).getText();
+                            varValue = null;
+                            symbol = new MinipascalVariable(varName,type, varValue);
+                            if (!symbolTable.exists(varName)) {
+                                 throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                            }
+                })*?
                 BRACKET_CLOSE
                 SEMICOLON;
 
-loops: WHILE BRACKET_OPEN ID COMPARATORS (string_declaration|ID) BRACKET_CLOSE DO
+loops: WHILE BRACKET_OPEN ID {
+                       varName = _input.LT(-1).getText();
+                       varValue = null;
+                       symbol = new MinipascalVariable(varName,type, varValue);
+                       if (!symbolTable.exists(varName)) {
+                            throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                       }
+              }
+              COMPARATORS (string_declaration|ID {
+                       varName = _input.LT(-1).getText();
+                       varValue = null;
+                       symbol = new MinipascalVariable(varName,type, varValue);
+                       if (!symbolTable.exists(varName)) {
+                            throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                       }
+              })
+              BRACKET_CLOSE DO
               BEGIN_EXECUTION
                (loops | console_actions | sentence | conditions)+?
               END_EXECUTION SEMICOLON;
 
-conditions: IF (ID | CONTENT) COMPARATORS (ID | NUMBERS) THEN
+conditions: IF (ID {
+                      varName = _input.LT(-1).getText();
+                      varValue = null;
+                      symbol = new MinipascalVariable(varName,type, varValue);
+                      if (!symbolTable.exists(varName)) {
+                           throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                      }
+             }
+            | CONTENT) COMPARATORS (ID {
+                      varName = _input.LT(-1).getText();
+                      varValue = null;
+                      symbol = new MinipascalVariable(varName,type, varValue);
+                      if (!symbolTable.exists(varName)) {
+                           throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                      }
+             }
+            | NUMBERS) THEN
             (loops | console_actions | sentence | conditions)*
             ELSE?
             (loops | console_actions | sentence | conditions)*
             END_EXECUTION;
 
-sentence: variable_declaration | variable_assign | variable_inference | variable_inference_with_oprations;
+sentence: variable_declaration | variable_assign  | variable_assign_with_oprations;
 
-variable_assign: TYPES ID EQUALS (CONTENT | NUMBERS) SEMICOLON;
+variable_assign: ID{
+                   varName = _input.LT(-1).getText();
+                   varValue = null;
+                   symbol = new MinipascalVariable(varName,type, varValue);
+                   if (!symbolTable.exists(varName)) {
+                        throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                   }
+                }
+                ASSIGN (string_declaration | NUMBERS) SEMICOLON { System.out.println("Variable value assign found.");}
+               ;
 
-variable_inference: ID ASSIGN (string_declaration | NUMBERS) SEMICOLON;
+variable_assign_with_oprations: ID {
+                                         varName = _input.LT(-1).getText();
+                                         varValue = null;
+                                         symbol = new MinipascalVariable(varName,type, varValue);
+                                         if (!symbolTable.exists(varName)) {
+                                              throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                                         }
+                               }
+                              ASSIGN BRACKET_OPEN variables_operations* BRACKET_CLOSE OPERATORS? (NUMBERS|ID {
+                                        varName = _input.LT(-1).getText();
+                                        varValue = null;
+                                        symbol = new MinipascalVariable(varName,type, varValue);
+                                        if (!symbolTable.exists(varName)) {
+                                             throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                                        }
+                              })?
+                              SEMICOLON { System.out.println("Variable value assign with operations found.");}
+                              ;
 
-variable_inference_with_oprations: ID ASSIGN BRACKET_OPEN variables_operations* BRACKET_CLOSE OPERATORS? (NUMBERS|ID)? SEMICOLON;
+variables_operations: ID {
+                            varName = _input.LT(-1).getText();
+                            varValue = null;
+                            symbol = new MinipascalVariable(varName,type, varValue);
+                            if (!symbolTable.exists(varName)) {
+                                 throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                            }
+                   }
+                    OPERATORS (ID {
+                             varName = _input.LT(-1).getText();
+                             varValue = null;
+                             symbol = new MinipascalVariable(varName,type, varValue);
+                             if (!symbolTable.exists(varName)) {
+                                  throw new MinipascalSemanticException("The symbol " + varName + " aren't previously declared!");
+                             }
+                    }
+                    |NUMBERS)?
+                    ;
 
-variables_operations: ID OPERATORS (ID|NUMBERS)?;
-
-variable_declaration: TYPES (ID COMMA?)* SEMICOLON;
+variable_declaration: TYPES (ID {
+                        varName = _input.LT(-1).getText();
+                        varValue = null;
+                        symbol = new MinipascalVariable(varName,type, varValue);
+                        if (!symbolTable.exists(varName)) {
+                            symbolTable.add(symbol);
+                            System.out.println("Symbol " +  symbol.toString() + " added.");
+                        } else {
+                            throw new MinipascalSemanticException("The symbol " + varName + " already exists!");
+                        }
+                    }
+                    COMMA?)* SEMICOLON { System.out.println("Variable declaration found."); }
+                    ;
 
 string_declaration: STRING_CONTENT;
 
@@ -65,7 +178,26 @@ ELSE: 'else';
 
 THEN: 'then';
 
-TYPES : 'Int'| 'String' | 'Char' | 'Long' | 'Boolean' | 'Var';
+TYPES : INTEGER| STRING | CHAR | LONG | BOOLEAN | VAR
+      ;
+
+INTEGER: 'Int' { type = MinipascalVariable.NUMBER; }
+       ;
+
+STRING: 'String' { type = MinipascalVariable.TEXT; }
+       ;
+
+CHAR: 'Char' { type = MinipascalVariable.TEXT; }
+    ;
+
+LONG: 'Long' { type = MinipascalVariable.NUMBER; }
+    ;
+
+BOOLEAN: 'Boolean' { type = MinipascalVariable.NUMBER; }
+       ;
+
+VAR: 'Var' { type = MinipascalVariable.TEXT; }
+   ;
 
 OPERATORS : '-' | '+' | '*' | '/';
 
